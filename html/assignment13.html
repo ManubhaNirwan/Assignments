@@ -1,0 +1,24 @@
+
+        <!DOCTYPE html>
+        <html>
+        <body>
+        <input type="date" id="myDate" value="">
+        <p>Click the button to display the full year of today's date.</p>
+         
+        <button onclick="myFunction()">Try it</button>
+         
+        <p id="demo"></p>
+         
+        <script>
+        function myFunction() {
+          var d = new Date();
+          var n = d.getFullYear();
+          var x = document.getElementById("myDate").value;
+          var l = x.slice(0,4)
+          var z = n - l;
+          document.getElementById("demo").innerHTML = z;
+        }
+        </script>
+         
+        </body>
+        </html>
